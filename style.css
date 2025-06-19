@@ -381,7 +381,7 @@ footer {
   .menu {
     display: none; /* Ocultar el menú inicialmente */
     flex-direction: column;
-    background: #e6b2ba;
+    background: #43a6e3;
     position: absolute;
     top: 80px;
     left: 0;
