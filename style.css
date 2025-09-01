@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url('img/922ec5e2-a70f-42f6-aeac-3def149f3341\ \(1\).jpg'); 
+  background-image: url('img/business-man-6583629_1920.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -56,7 +56,19 @@ p {
   color: #d1cece; /* Cambia el color del texto (opcional) */
   line-height: 1.5; /* Cambia el espaciado entre líneas (opcional) */
 }
+.mi-boton {
+    background-color: #e8a96ac7; /* azul */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
 
+  .mi-boton:hover {
+    background-color: #709dce; /* azul más oscuro al pasar el ratón */
+  }
 @font-face {
   font-family: 'Fleur_De_Leah';
   src: url('Fonts/Fleur_De_Leah/FleurDeLeah-Regular.ttf') format('truetype');
@@ -151,7 +163,7 @@ color: #cccccc; /* Cambia de color al pasar el cursor (opcional) */
 .contenedor {
   grid-area: contenedor;
   text-align: center;
-  background-color: #30647483;
+  background-color: #306474b4;
   padding: 20px;
   border-radius: 5px;
 }
@@ -168,7 +180,7 @@ color: #cccccc; /* Cambia de color al pasar el cursor (opcional) */
 .contenedor-sobre-mi {
   grid-area: contenedor;
   text-align: center;
-  background-color: #b2cfe6a3;
+  background-color: #6ea1cae4;
   padding: 40px;
   border-radius: 5px;
   display: block;
@@ -179,7 +191,7 @@ color: #cccccc; /* Cambia de color al pasar el cursor (opcional) */
   padding: 20px
   }
 .contenido-sobre-mi {
-    background-color: #9b92b281;
+    background-color: #9b92b2e0;
     grid-area: contenido;
     text-align: justify;
     padding: 20px;
@@ -190,7 +202,7 @@ color: #cccccc; /* Cambia de color al pasar el cursor (opcional) */
 .sidebar {
   grid-area: sidebar;
   text-align: center;
-  background-color: #085376a8;
+  background-color: #085376c8;
   padding: 20px;
   border-radius: 5px;
   display: flex;
@@ -216,7 +228,7 @@ color: #cccccc; /* Cambia de color al pasar el cursor (opcional) */
   grid-area: sidebar;
   text-align: center;
   color: #30302e;
-  background-color: #9e3197a8 ;
+  background-color: #9e31978d ;
   padding: 20px;
   border-radius: 10px;
 }
@@ -235,17 +247,17 @@ color: #cccccc; /* Cambia de color al pasar el cursor (opcional) */
 
 #bloque1 {
   grid-area: bloque1;
-  background: #fad0c4b8;
+  background: #fad0c4c2;
 }
 
 #bloque2 {
   grid-area: bloque2;
-  background: #806352a8;
+  background: #806352b7;
 }
 
 #bloque3 {
   grid-area: bloque3;
-  background: #fff7f37a;
+  background: #fff7f38c;
 }
 .lista-educacion {
   font-size: 14px;
@@ -267,7 +279,7 @@ color: #cccccc; /* Cambia de color al pasar el cursor (opcional) */
   margin-bottom: 10px;
 }
 .experiencia-laboral strong {
-  color: #30302e;
+  color: #30302ebf;
 }
 .logos-Empresa {
   width: 150px;
@@ -390,7 +402,7 @@ color: #cccccc; /* Cambia de color al pasar el cursor (opcional) */
 
 /* Footer */
 footer {
-  background-color: #4aa4e0e1;
+  background-color: #4d97c9c9;
   color: white;
   grid-area: footer;
   padding: 20px;
