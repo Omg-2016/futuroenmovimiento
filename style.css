@@ -180,7 +180,7 @@ color: #cccccc; /* Cambia de color al pasar el cursor (opcional) */
 .contenedor-sobre-mi {
   grid-area: contenedor;
   text-align: center;
-  background-color: #6ea1cae4;
+  background-color: #306474b4;
   padding: 40px;
   border-radius: 5px;
   display: block;
@@ -445,7 +445,7 @@ footer {
   .menu {
     display: none; /* Ocultar el menú inicialmente */
     flex-direction: column;
-    background: #43a6e3;
+    background: #0c6aa4;
     position: absolute;
     top: 80px;
     left: 0;
