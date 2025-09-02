@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sobre mí</title>
+
+</head>
+<body>
+    <!-- Usar solo uno de los contenedores, no ambos al mismo tiempo -->
+    <div class="contenedor-sobre-mi">
+        <nav>
+            <button class="button-toggle">☰</button> <!-- Icono de hamburguesa -->
+            <div class="menu">
+              <ul class="barra-navegacion">
+                <li class="home"><a href="index.html">HOME</a></li>
+                <li class="separador"></li>
+                <li class="extra-opciones">
+                  <a href="Sobre-mi.html" class="extra-opciones">Sobre mí</a>
+                  <a href="Mis-proyectos.html" class="extra-opciones">Mis proyectos</a>
+                  <a href="Servicios.html" class="extra-opciones">Servicios</a>
+                  <a href="#footer" class="extra-opciones">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      <div class="form-img">
+    <img src="img/foto manos.jpg" alt="Imagen de contacto">
+  </div> 
+          <!-- FORMULARIO DE CONTACTO -->
+          <section class="formulario-cita">
+  <h2><strong>Programar una cita</strong></h2>
+  <form action="https://formspree.io/f/xrbaaydr" method="POST">
+
+    <!-- Correo -->
+    <label for="correo">Correo *</label>
+    <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com">
+
+    <!-- Nombre -->
+    <label for="nombre">Nombre *</label>
+    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+
+    <!-- Teléfono -->
+    <label for="telefono">Teléfono *</label>
+    <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +34 600 123 456">
+
+    <!-- Disponibilidad -->
+    <label>¿Cuándo estás disponible?</label>
+    <table class="tabla-disponibilidad">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Mañana</th>
+          <th>Mediodía</th>
+          <th>Tarde</th>
+          <th>Noche</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lunes</td>
+          <td><input type="checkbox" name="lunes[]" value="mañana"></td>
+          <td><input type="checkbox" name="lunes[]" value="mediodia"></td>
+          <td><input type="checkbox" name="lunes[]" value="tarde"></td>
+          <td><input type="checkbox" name="lunes[]" value="noche"></td>
+        </tr>
+        <tr>
+          <td>Martes</td>
+          <td><input type="checkbox" name="martes[]" value="mañana"></td>
+          <td><input type="checkbox" name="martes[]" value="mediodia"></td>
+          <td><input type="checkbox" name="martes[]" value="tarde"></td>
+          <td><input type="checkbox" name="martes[]" value="noche"></td>
+        </tr>
+        <tr>
+          <td>Miércoles</td>
+          <td><input type="checkbox" name="miercoles[]" value="mañana"></td>
+          <td><input type="checkbox" name="miercoles[]" value="mediodia"></td>
+          <td><input type="checkbox" name="miercoles[]" value="tarde"></td>
+          <td><input type="checkbox" name="miercoles[]" value="noche"></td>
+        </tr>
+        <tr>
+          <td>Jueves</td>
+          <td><input type="checkbox" name="jueves[]" value="mañana"></td>
+          <td><input type="checkbox" name="jueves[]" value="mediodia"></td>
+          <td><input type="checkbox" name="jueves[]" value="tarde"></td>
+          <td><input type="checkbox" name="jueves[]" value="noche"></td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td><input type="checkbox" name="viernes[]" value="mañana"></td>
+          <td><input type="checkbox" name="viernes[]" value="mediodia"></td>
+          <td><input type="checkbox" name="viernes[]" value="tarde"></td>
+          <td><input type="checkbox" name="viernes[]" value="noche"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Mensaje -->
+    <label for="mensaje">¿Hay algún tema o pregunta en concreto que quieras comentar?</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+    <!-- Botón -->
+    <button type="submit">Enviar ✉️</button>
+  </form>
+</section>
+
+<style>
+.formulario-cita {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #e6e4e2e5; /* marrón pastel claro */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.formulario-cita h2 {
+  text-align: center;
+  color: #1a3c7ce9; /* azul */
+  margin-bottom: 20px;
+}
+
+.formulario-cita label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #333; /* casi negro */
+}
+
+.formulario-cita input,
+.formulario-cita textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.formulario-cita input:focus,
+.formulario-cita textarea:focus {
+  border-color: #1a3d7c;
+  outline: none;
+  box-shadow: 0 0 5px rgba(26,61,124,0.3);
+}
+
+.tabla-disponibilidad {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.tabla-disponibilidad th,
+.tabla-disponibilidad td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.tabla-disponibilidad th {
+  background-color: #1a3d7c;
+  color: white;
+}
+
+.tabla-disponibilidad td:first-child {
+  font-weight: bold;
+  text-align: left;
+}
+
+.formulario-cita button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: #1a3d7c;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario-cita button:hover {
+  background: #0f244c;
+}
+.form-img img {
+  display: block;
+  width: 100%;     /* ocupa todo el ancho del formulario */
+  height: 180px;   /* altura fija más baja */
+  object-fit: cover; /* recorta la imagen para que no se deforme */
+}
+</style>
+
+        <br>
+        <footer id="footer">
+
+
+
+                <div class="social-icons">
+        <a href="https://www.linkedin.com/company/journo-portfolio/" target="_blank">
+          <img src="img/linkedin-logo.png" alt="LinkedIn" style="width: 32px; height: 32px;">
+        </a>
+        <a href="https://www.instagram.com/journo.portfolio/" target="_blank">
+          <img src="img/instagram-logo.png" alt="Instagram" style="width: 32px; height: 32px;">
+        </a>
+        <a href="https://x.com/journoportfolio" target="_blank">
+          <img src="img/twitter-logo.png" alt="Twitter" style="width: 32px; height: 32px;">
+        <a href="https://x.com/journoportfolio" target="_blank">
+          <img src="img/whatsapp-logo.png" alt="Whatsapp" style="width: 32px; height: 32px;">
+        </a>
+      </div>
+      
+      
+      
+        </footer>
+          
+        <script src="main.js">
+        </script>   
+    </body>         
+       
+      
+</html>
