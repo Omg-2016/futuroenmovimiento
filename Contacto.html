@@ -21,11 +21,13 @@
                   <a href="Sobre-mi.html" class="extra-opciones">Sobre mí</a>
                   <a href="Mis-proyectos.html" class="extra-opciones">Mis proyectos</a>
                   <a href="Servicios.html" class="extra-opciones">Servicios</a>
-                  <a href="#footer" class="extra-opciones">Contacto</a>
+                  <a href="Contacto.html" class="extra-opciones">Contacto</a>
                 </li>
               </ul>
             </div>
           </nav>
+      <div class="bloque-azul">
+
       <div class="form-img">
     <img src="img/foto manos.jpg" alt="Imagen de contacto">
   </div> 
@@ -52,10 +54,9 @@
       <thead>
         <tr>
           <th></th>
-          <th>Mañana</th>
-          <th>Mediodía</th>
-          <th>Tarde</th>
-          <th>Noche</th>
+          <th>Mañana (9h a 12h)</th>
+          <th>Mediodía (12h a 16h)</th>
+          <th>Tarde (16h a 20h)</th>
         </tr>
       </thead>
       <tbody>
@@ -64,35 +65,30 @@
           <td><input type="checkbox" name="lunes[]" value="mañana"></td>
           <td><input type="checkbox" name="lunes[]" value="mediodia"></td>
           <td><input type="checkbox" name="lunes[]" value="tarde"></td>
-          <td><input type="checkbox" name="lunes[]" value="noche"></td>
         </tr>
         <tr>
           <td>Martes</td>
           <td><input type="checkbox" name="martes[]" value="mañana"></td>
           <td><input type="checkbox" name="martes[]" value="mediodia"></td>
           <td><input type="checkbox" name="martes[]" value="tarde"></td>
-          <td><input type="checkbox" name="martes[]" value="noche"></td>
         </tr>
         <tr>
           <td>Miércoles</td>
           <td><input type="checkbox" name="miercoles[]" value="mañana"></td>
           <td><input type="checkbox" name="miercoles[]" value="mediodia"></td>
           <td><input type="checkbox" name="miercoles[]" value="tarde"></td>
-          <td><input type="checkbox" name="miercoles[]" value="noche"></td>
         </tr>
         <tr>
           <td>Jueves</td>
           <td><input type="checkbox" name="jueves[]" value="mañana"></td>
           <td><input type="checkbox" name="jueves[]" value="mediodia"></td>
           <td><input type="checkbox" name="jueves[]" value="tarde"></td>
-          <td><input type="checkbox" name="jueves[]" value="noche"></td>
         </tr>
         <tr>
           <td>Viernes</td>
           <td><input type="checkbox" name="viernes[]" value="mañana"></td>
           <td><input type="checkbox" name="viernes[]" value="mediodia"></td>
           <td><input type="checkbox" name="viernes[]" value="tarde"></td>
-          <td><input type="checkbox" name="viernes[]" value="noche"></td>
         </tr>
       </tbody>
     </table>
@@ -105,13 +101,24 @@
     <button type="submit">Enviar ✉️</button>
   </form>
 </section>
+</div>
 
 <style>
+.bloque-azul {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #e0f0ff; /* azul claro */
+  border: 3px solid #1a3d7c; /* borde azul fuerte */
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  overflow: hidden; /* para que la imagen no sobresalga */
+}
+
 .formulario-cita {
   max-width: 700px;
   margin: 40px auto;
   padding: 25px;
-  background: #e6e4e2e5; /* marrón pastel claro */
+  background: #e6e4e2f6; /* marrón pastel claro */
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   font-family: Arial, sans-serif;
@@ -195,27 +202,28 @@
 </style>
 
         <br>
-        <footer id="footer">
+<footer id="footer">
 
 
 
-                <div class="social-icons">
+      <div class="social-icons">
         <a href="https://www.linkedin.com/company/journo-portfolio/" target="_blank">
           <img src="img/linkedin-logo.png" alt="LinkedIn" style="width: 32px; height: 32px;">
         </a>
-        <a href="https://www.instagram.com/journo.portfolio/" target="_blank">
+        <a href="https://www.instagram.com/futuro.en.movimiento/" target="_blank">
           <img src="img/instagram-logo.png" alt="Instagram" style="width: 32px; height: 32px;">
         </a>
-        <a href="https://x.com/journoportfolio" target="_blank">
-          <img src="img/twitter-logo.png" alt="Twitter" style="width: 32px; height: 32px;">
-        <a href="https://x.com/journoportfolio" target="_blank">
+        <a href="https://www.tiktok.com/@futuroenmovimiento" target="_blank">
+          <img src="img/tiktok-logo.png" alt="Twitter" style="width: 32px; height: 32px;">
+        <a href="https://www.tiktok.com/@futuroenmovimiento" target="_blank">
           <img src="img/whatsapp-logo.png" alt="Whatsapp" style="width: 32px; height: 32px;">
         </a>
       </div>
-      
-      
-      
-        </footer>
+
+
+
+    </footer>
+
           
         <script src="main.js">
         </script>   
