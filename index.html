@@ -15,6 +15,23 @@
   <title>Santiago Suárez | Coaching Personal | Futuro en movimiento
   </title>
 </head>
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#295099;color:white;padding:15px;display:flex;justify-content:space-between;align-items:center;z-index:1000;font-size:14px">
+  <span>
+    Usamos cookies para mejorar tu experiencia. 
+    <a href="Politica-cookies.html" target="_blank" style="color:#ee9e4e;text-decoration:underline">Saber más</a>.
+  </span>
+  <button onclick="acceptCookies()" style="background:#ee9e4e;color:#1a3d7c;border:none;padding:8px 14px;border-radius:6px;font-weight:bold;cursor:pointer">Aceptar</button>
+</div>
+
+<script>
+function acceptCookies(){
+  document.getElementById('cookie-banner').style.display="none";
+  localStorage.setItem("cookies-accepted","yes");
+}
+if(localStorage.getItem("cookies-accepted")==="yes"){
+  document.getElementById('cookie-banner').style.display="none";
+}
+</script>
 
 <body>
   <div class="contenedor">
